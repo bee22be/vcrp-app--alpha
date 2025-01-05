@@ -151,7 +151,7 @@ function jr(I){return I&&I.__esModule&&Object.prototype.hasOwnProperty.call(I,"d
             </section>
         </article>
         <article class="page__record">
-            <section class="box"><h2>直近の皆の報告書録</h2><div class="tableWrap"></div></section>
+            <section class="box"><h2>直近の皆の報告書録</h2><div class="tableWrap tableWrap--scroll"></div></section>
         </article>
         <article class="page__instructions">
             <section class="box">
