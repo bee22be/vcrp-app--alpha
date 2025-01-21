@@ -1,0 +1,1 @@
+import{o as e}from"./dialog-DtPcjgpU.js";document.querySelector(".resetFunc__button").addEventListener("click",async function(o){await e("関連データをリセットします。よろしいですか？")&&(localStorage.removeItem("VCRP__id"),localStorage.removeItem("VCRP__name"),localStorage.removeItem("VCRP__login"))});
