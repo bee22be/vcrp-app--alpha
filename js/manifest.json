@@ -1,7 +1,7 @@
 {
     "name": "VCRP APP",
     "short_name": "VCRP",
-    "start_url": "../../",
+    "start_url": "../",
     "display": "standalone",
     "background_color": "#131519",
     "theme_color": "#fff",
