@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="apple-mobile-web-app-title" content="VCRP APP">
+    <title>VCRP APP</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="js/manifest.json">
+    <link rel="apple-touch-icon" href="img/icon.png">
+    <link rel="shortcut icon" href="img/icon.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#1C212A">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('js/service-worker.js')
+                .then(reg => console.log('Service Worker registered!', reg))
+                .catch(err => console.error('Service Worker registration failed:', err));
+        }
+    </script>
+  <script type="module" crossorigin src="./assets/main-C2efKFCz.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/dialog-DtPcjgpU.js">
+  <link rel="stylesheet" crossorigin href="./assets/dialog-adbYaegy.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-Wg9SguI2.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title"><span class="header__title-name"></span><span class="header__title-cat">ホーム</span></h1>
+    </header>
+    <main>
+
+    </main>
+    <footer class="footer">
+        <menu class="menu">
+            <button type="button" class="menu__button"></button>
+            <ul class="menu__list">
+                <li class="menu__item menu__item--home js-on"><a>ホーム</a></li>
+                <li class="menu__item menu__item--record"><a>記録</a></li>
+                <li class="menu__item menu__item--instructions"><a>説明</a></li>
+                <li class="menu__item menu__item--setting"><a>設定</a></li>
+            </ul>
+        </menu>
+    </footer>
+    <!-- <dialog open>aaa</dialog> -->
+    <aside class="starting">
+        <form class="startingWrap">
+            <p class="starting__disc starting__disc--1st js-on">このツールは関係者以外は使用しないでください。</p>
+            <p class="starting__disc starting__disc--2nd">あなたの名前を選んでネ</p>
+            <label class="input starting__inputWrap starting__inputWrap--id js-on">
+                <span>ID</span>
+                <input type="text" class="starting__input starting__input--id" required>
+            </label>
+            <label class="input starting__inputWrap starting__inputWrap--pass js-on">
+                <span>パスワード</span>
+                <input type="password" class="starting__input starting__input--pass" required>
+            </label>
+            <label class="input starting__inputWrap starting__inputWrap--text">
+                <span>名前</span>
+                <select class="starting__input starting__input--text" required><option value="">読み込み中…</option></select>
+            </label>
+            <footer class="starting__footer">
+                <div class="starting__errorWrap">
+                    <p class="starting__error">※ idかpassが違うヨ</p>
+                    <p class="starting__error2">※ 自分の名前を選んでネ</p>
+                </div>
+                <button type="submit" class="starting__button">送信</button>
+            </footer>
+        </form>
+    </aside>
+    <aside class="landing"></aside>
+    <dialog class="originDialog">
+        <p class="originDialogMessage"></p>
+        <div class="originDialogButtons">
+            <button class="button button--1st originDialogOk">OK</button>
+            <button class="button button--0th originDialogCancel">Cancel</button>
+        </div>
+    </dialog>
+    <!-- <iframe src="https://bee22be.github.io/effectream/snow.html" class="effect"></iframe> -->
+</body>
+</html>
